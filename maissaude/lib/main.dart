@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maissaude/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,10 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '+Saude',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       initialRoute: '/',
-      // routes: {'/main': (context) => MainScreen()},
+      routes: {'/': (context) => LoginPage()},
     );
   }
 }
