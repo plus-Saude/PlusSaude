@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:maissaude/English/formsEn.dart';
+import 'package:maissaude/Spanish/formsSp.dart';
 import 'package:maissaude/login.dart';
 import 'package:maissaude/telaPrincipal.dart';
-import 'package:maissaude/formsPt.dart';
+import 'package:maissaude/Portuguese/formsPt.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,9 +19,9 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => LoginPage(),
           '/main': (context) => MainScreen(),
-          '/English': (context) => MainScreen(),
-          '/Spanish': (context) => MainScreen(),
-          '/Portuguese': (context) => MyForm(),
+          '/English': (context) => MyForm(),
+          '/Spanish': (context) => MiForma(),
+          '/Portuguese': (context) => MeuForm(),
         });
   }
 }
